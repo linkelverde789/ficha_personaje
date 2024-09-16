@@ -1,0 +1,187 @@
+@font-face {
+    font-family: 'Beleren Bold';
+    src: url('fonts/Beleren2016SmallCaps-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.column {
+    flex: 0 0 48%;
+}
+
+body, h1, h2, h3, p, table, input, select, textarea {
+    font-size: x-large;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('images/william-lu-01.jpg');
+    font-family: 'Beleren Bold', serif;
+    background-color: #f4f1e6;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+form {
+    /* background-image: url('https://www.photos-public-domain.com/wp-content/uploads/2018/07/graph-paper-texture-768x998.jpg'); */
+    background: #fff;
+    border: 2px solid #4a3a2a;
+    border-radius: 8px;
+    padding: 20px;
+   
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.pepe {
+    background: #fff;
+    border: 2px solid #4a3a2a;
+    border-radius: 8px;
+    padding: 20px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+h1, h2 {
+    color: #4a3a2a;
+    border-bottom: 2px solid #4a3a2a;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="text"], input[type="number"], textarea, select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background: #4a3a2a;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #6e4b3e;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: medium;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background: #4a3a2a;
+    color: #fff;
+}
+
+table td button {
+    font-size: 18px;
+    line-height: 1;
+    padding: 5px;
+}
+
+#divHabilidad {
+    display: none;
+    background: #fff8e1;
+    padding: 15px;
+    border: 1px solid #d4a13a;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+#hidden {
+    display: none;
+}
+
+#limite {
+    font-weight: bold;
+    color: #e53935;
+}
+
+textarea {
+    background: #fafafa;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .none {
+      all: unset;
+    }
+    body {
+      background-image: none;
+      background-color: white;
+      padding: 0;
+      max-width: 768px;
+    }
+    form{
+        all:unset;
+        display: flex;
+        flex-direction: column;
+        max-width: 768px;    }
+    .form-row{
+        display: flex;
+        flex-direction: column;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .none {
+      all: unset;
+    }
+    body {
+      background-image: none;
+      background-color: white;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    form{
+        all:unset;
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+    }
+    .form-row{
+        display: flex;
+        flex-direction: column;
+    }
+  }
+
+
+  form select, textarea, input{
+font-family: 'Roboto';
+  }
